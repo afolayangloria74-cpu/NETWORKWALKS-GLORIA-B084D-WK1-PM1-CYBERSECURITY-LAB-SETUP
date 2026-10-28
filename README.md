@@ -41,10 +41,7 @@ Solution:
 - Ran sudo ip addr add 10.0.0.2/24 dev eth0
 
 ---
-**Acknowledgement:** Thanks to @waqaskarimccie and @networkwalks
-- Added default gateway sudo ip route add default via 10.0.0.1
-- Fixed DNS with echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf
-- Verified with ping -c 3 8.8.8.8 (0% loss)
-## Troubleshooting
-Issue: After flush, internet went off - Network unreachable.
+Acknowledgement
+Thanks to `@waqaskamranccie` for the lab guide
+
 Solution: Deleted Wired connection 1 and recreated with nmcli con add type ethernet ifname eth0 ipv4.method auto
