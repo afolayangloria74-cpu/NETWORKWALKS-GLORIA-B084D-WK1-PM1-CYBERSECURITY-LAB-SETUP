@@ -39,6 +39,9 @@ Issue: My IP kept going back to 10.0.0.3 and internet went off with "Network unr
 Solution: 
 - Ran sudo ip addr flush dev eth0
 - Ran sudo ip addr add 10.0.0.2/24 dev eth0
+
+---
+**Acknowledgement:** Thanks to @waqaskarimccie and @networkwalks
 - Added default gateway sudo ip route add default via 10.0.0.1
 - Fixed DNS with echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf
 - Verified with ping -c 3 8.8.8.8 (0% loss)
